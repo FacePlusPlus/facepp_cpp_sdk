@@ -7,16 +7,174 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5A01B260215F64E300949331 /* FaceppApiLib.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 5A01B25F215F64E300949331 /* FaceppApiLib.hpp */; };
-		5A01B262215F64E300949331 /* FaceppApiLibPriv.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 5A01B261215F64E300949331 /* FaceppApiLibPriv.hpp */; };
-		5A01B264215F64E300949331 /* FaceppApiLib.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5A01B263215F64E300949331 /* FaceppApiLib.cpp */; };
+		5A01B2BD215F7C8400949331 /* FaceDetect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5A01B2BB215F7C8400949331 /* FaceDetect.cpp */; };
+		5A01B2BE215F7C8400949331 /* FaceDetect.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 5A01B2BC215F7C8400949331 /* FaceDetect.hpp */; };
+		5A0DF8E221607A4300A15585 /* FaceppApi.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5A0DF8E021607A4300A15585 /* FaceppApi.cpp */; };
+		5A0DF8E321607A4300A15585 /* FaceppApi.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 5A0DF8E121607A4300A15585 /* FaceppApi.hpp */; };
+		5A0DF8EB2160B72200A15585 /* FaceCompare.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5A0DF8E92160B72200A15585 /* FaceCompare.cpp */; };
+		5A0DF8EC2160B72200A15585 /* FaceCompare.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 5A0DF8EA2160B72200A15585 /* FaceCompare.hpp */; };
+		5AB230472160B9C2005DB600 /* FaeBeautify.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5AB230452160B9C2005DB600 /* FaeBeautify.cpp */; };
+		5AB230482160B9C2005DB600 /* FaeBeautify.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 5AB230462160B9C2005DB600 /* FaeBeautify.hpp */; };
+		5AB2304B2160BB6D005DB600 /* FaceAnalyze.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5AB230492160BB6D005DB600 /* FaceAnalyze.cpp */; };
+		5AB2304C2160BB6D005DB600 /* FaceAnalyze.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 5AB2304A2160BB6D005DB600 /* FaceAnalyze.hpp */; };
+		5AB2304F2160BC0A005DB600 /* FaceGetDetail.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5AB2304D2160BC0A005DB600 /* FaceGetDetail.cpp */; };
+		5AB230502160BC0A005DB600 /* FaceGetDetail.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 5AB2304E2160BC0A005DB600 /* FaceGetDetail.hpp */; };
+		5AB230532160BCF3005DB600 /* FaceSetUserId.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5AB230512160BCF3005DB600 /* FaceSetUserId.cpp */; };
+		5AB230542160BCF3005DB600 /* FaceSetUserId.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 5AB230522160BCF3005DB600 /* FaceSetUserId.hpp */; };
+		5AB230582160BDAB005DB600 /* FaceSetCreate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5AB230562160BDAB005DB600 /* FaceSetCreate.cpp */; };
+		5AB230592160BDAB005DB600 /* FaceSetCreate.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 5AB230572160BDAB005DB600 /* FaceSetCreate.hpp */; };
+		5AB230602160BF11005DB600 /* FaceSetAdd.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5AB2305E2160BF11005DB600 /* FaceSetAdd.cpp */; };
+		5AB230612160BF11005DB600 /* FaceSetAdd.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 5AB2305F2160BF11005DB600 /* FaceSetAdd.hpp */; };
+		5AB230642160BFBF005DB600 /* FaceSetRemove.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5AB230622160BFBE005DB600 /* FaceSetRemove.cpp */; };
+		5AB230652160BFBF005DB600 /* FaceSetRemove.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 5AB230632160BFBF005DB600 /* FaceSetRemove.hpp */; };
+		5AB230682160C040005DB600 /* FaceSetSearch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5AB230662160C040005DB600 /* FaceSetSearch.cpp */; };
+		5AB230692160C040005DB600 /* FaceSetSearch.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 5AB230672160C040005DB600 /* FaceSetSearch.hpp */; };
+		5AB2306C2160C0B9005DB600 /* FaceSetDetail.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5AB2306A2160C0B9005DB600 /* FaceSetDetail.cpp */; };
+		5AB2306D2160C0B9005DB600 /* FaceSetDetail.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 5AB2306B2160C0B9005DB600 /* FaceSetDetail.hpp */; };
+		5AB230702160C126005DB600 /* FaceSetUpdate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5AB2306E2160C126005DB600 /* FaceSetUpdate.cpp */; };
+		5AB230712160C126005DB600 /* FaceSetUpdate.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 5AB2306F2160C126005DB600 /* FaceSetUpdate.hpp */; };
+		5AB230742160C18B005DB600 /* FaceSetDelete.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5AB230722160C18B005DB600 /* FaceSetDelete.cpp */; };
+		5AB230752160C18B005DB600 /* FaceSetDelete.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 5AB230732160C18B005DB600 /* FaceSetDelete.hpp */; };
+		5AB230782160C1FF005DB600 /* FaceSetList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5AB230762160C1FF005DB600 /* FaceSetList.cpp */; };
+		5AB230792160C1FF005DB600 /* FaceSetList.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 5AB230772160C1FF005DB600 /* FaceSetList.hpp */; };
+		5AB2307C2160C29D005DB600 /* FaceSetAddFaceAsync.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5AB2307A2160C29D005DB600 /* FaceSetAddFaceAsync.cpp */; };
+		5AB2307D2160C29D005DB600 /* FaceSetAddFaceAsync.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 5AB2307B2160C29D005DB600 /* FaceSetAddFaceAsync.hpp */; };
+		5AB230802160C32D005DB600 /* FaceSetRemoceFaceAsync.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5AB2307E2160C32D005DB600 /* FaceSetRemoceFaceAsync.cpp */; };
+		5AB230812160C32D005DB600 /* FaceSetRemoceFaceAsync.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 5AB2307F2160C32D005DB600 /* FaceSetRemoceFaceAsync.hpp */; };
+		5AB230842160C3AD005DB600 /* FaceSetGetTaskStatus.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5AB230822160C3AD005DB600 /* FaceSetGetTaskStatus.cpp */; };
+		5AB230852160C3AD005DB600 /* FaceSetGetTaskStatus.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 5AB230832160C3AD005DB600 /* FaceSetGetTaskStatus.hpp */; };
+		5AB2309A2160C6D3005DB600 /* OCRIDCard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5AB230982160C6D3005DB600 /* OCRIDCard.cpp */; };
+		5AB2309B2160C6D3005DB600 /* OCRIDCard.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 5AB230992160C6D3005DB600 /* OCRIDCard.hpp */; };
+		5AB2309E2160C752005DB600 /* OCRDriverLicense.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5AB2309C2160C752005DB600 /* OCRDriverLicense.cpp */; };
+		5AB2309F2160C752005DB600 /* OCRDriverLicense.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 5AB2309D2160C752005DB600 /* OCRDriverLicense.hpp */; };
+		5AB230A22160C7D9005DB600 /* OCRVehicle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5AB230A02160C7D9005DB600 /* OCRVehicle.cpp */; };
+		5AB230A32160C7D9005DB600 /* OCRVehicle.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 5AB230A12160C7D9005DB600 /* OCRVehicle.hpp */; };
+		5AB230A62160C84C005DB600 /* OCRBankCard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5AB230A42160C84C005DB600 /* OCRBankCard.cpp */; };
+		5AB230A72160C84C005DB600 /* OCRBankCard.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 5AB230A52160C84C005DB600 /* OCRBankCard.hpp */; };
+		5AB230AB2160C902005DB600 /* ImageLicenseplate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5AB230A92160C902005DB600 /* ImageLicenseplate.cpp */; };
+		5AB230AC2160C902005DB600 /* ImageLicenseplate.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 5AB230AA2160C902005DB600 /* ImageLicenseplate.hpp */; };
+		5AB230AF2160C998005DB600 /* MergeFace.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5AB230AD2160C998005DB600 /* MergeFace.cpp */; };
+		5AB230B02160C998005DB600 /* MergeFace.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 5AB230AE2160C998005DB600 /* MergeFace.hpp */; };
+		5AB230B32160CA18005DB600 /* RecognizeText.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5AB230B12160CA18005DB600 /* RecognizeText.cpp */; };
+		5AB230B42160CA18005DB600 /* RecognizeText.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 5AB230B22160CA18005DB600 /* RecognizeText.hpp */; };
+		5AB230B72160CA84005DB600 /* SceneAndObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5AB230B52160CA84005DB600 /* SceneAndObject.cpp */; };
+		5AB230B82160CA84005DB600 /* SceneAndObject.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 5AB230B62160CA84005DB600 /* SceneAndObject.hpp */; };
+		5AB230BE2160D0A5005DB600 /* CurlPost.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5AB230BC2160D0A5005DB600 /* CurlPost.cpp */; };
+		5AB230BF2160D0A5005DB600 /* CurlPost.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 5AB230BD2160D0A5005DB600 /* CurlPost.hpp */; };
+		5AFB19B521709D07005F9EF0 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5AFB19B421709D07005F9EF0 /* main.cpp */; };
+		5AFB19BA21709D1B005F9EF0 /* libcurl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A7C1E12216F2AC600B8EDD7 /* libcurl.a */; };
+		5AFB19BB21709D24005F9EF0 /* libjson_linux.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A7C1E10216F2AA300B8EDD7 /* libjson_linux.a */; };
+		5AFB19BC21709DD0005F9EF0 /* Guesture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5A7C1E4D217099F000B8EDD7 /* Guesture.cpp */; };
+		5AFB19BD21709DD0005F9EF0 /* HumanBodyDetect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5A7C1E4E217099F200B8EDD7 /* HumanBodyDetect.cpp */; };
+		5AFB19BE21709DD0005F9EF0 /* HumanBodySegment.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5A7C1E48217099EC00B8EDD7 /* HumanBodySegment.cpp */; };
+		5AFB19BF21709DD0005F9EF0 /* HumanBodySkeleton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5A7C1E4A217099EE00B8EDD7 /* HumanBodySkeleton.cpp */; };
+		5AFB19C021709DE1005F9EF0 /* Guesture.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 5A7C1E4B217099EE00B8EDD7 /* Guesture.hpp */; };
+		5AFB19C121709DE1005F9EF0 /* HumanBodyDetect.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 5A7C1E47217099EB00B8EDD7 /* HumanBodyDetect.hpp */; };
+		5AFB19C221709DE1005F9EF0 /* HumanBodySegment.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 5A7C1E49217099ED00B8EDD7 /* HumanBodySegment.hpp */; };
+		5AFB19C321709DE1005F9EF0 /* HumanBodySkeleton.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 5A7C1E4C217099EF00B8EDD7 /* HumanBodySkeleton.hpp */; };
+		5AFB19C721709F4E005F9EF0 /* libFaceppApi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AFB19C421709DE1005F9EF0 /* libFaceppApi.a */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		5AFB19B021709D07005F9EF0 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		5A01B25C215F64E300949331 /* libFaceppApiLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFaceppApiLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		5A01B25F215F64E300949331 /* FaceppApiLib.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FaceppApiLib.hpp; sourceTree = "<group>"; };
-		5A01B261215F64E300949331 /* FaceppApiLibPriv.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FaceppApiLibPriv.hpp; sourceTree = "<group>"; };
-		5A01B263215F64E300949331 /* FaceppApiLib.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FaceppApiLib.cpp; sourceTree = "<group>"; };
+		5A01B2BB215F7C8400949331 /* FaceDetect.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FaceDetect.cpp; sourceTree = "<group>"; };
+		5A01B2BC215F7C8400949331 /* FaceDetect.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FaceDetect.hpp; sourceTree = "<group>"; };
+		5A0DF8E021607A4300A15585 /* FaceppApi.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FaceppApi.cpp; sourceTree = "<group>"; };
+		5A0DF8E121607A4300A15585 /* FaceppApi.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FaceppApi.hpp; sourceTree = "<group>"; };
+		5A0DF8E92160B72200A15585 /* FaceCompare.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FaceCompare.cpp; sourceTree = "<group>"; };
+		5A0DF8EA2160B72200A15585 /* FaceCompare.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FaceCompare.hpp; sourceTree = "<group>"; };
+		5A2BB4F0216E029500A56CDA /* libFaceppApi.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFaceppApi.a; path = build/Debug/libFaceppApi.a; sourceTree = "<group>"; };
+		5A7C1DFD216F2A7800B8EDD7 /* stdcheaders.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stdcheaders.h; sourceTree = "<group>"; };
+		5A7C1DFE216F2A7800B8EDD7 /* mprintf.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mprintf.h; sourceTree = "<group>"; };
+		5A7C1DFF216F2A7800B8EDD7 /* easy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = easy.h; sourceTree = "<group>"; };
+		5A7C1E00216F2A7800B8EDD7 /* curl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = curl.h; sourceTree = "<group>"; };
+		5A7C1E01216F2A7800B8EDD7 /* curlver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = curlver.h; sourceTree = "<group>"; };
+		5A7C1E02216F2A7800B8EDD7 /* system.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = system.h; sourceTree = "<group>"; };
+		5A7C1E03216F2A7800B8EDD7 /* typecheck-gcc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "typecheck-gcc.h"; sourceTree = "<group>"; };
+		5A7C1E04216F2A7800B8EDD7 /* multi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = multi.h; sourceTree = "<group>"; };
+		5A7C1E06216F2A8500B8EDD7 /* reader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = reader.h; sourceTree = "<group>"; };
+		5A7C1E07216F2A8500B8EDD7 /* config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		5A7C1E08216F2A8500B8EDD7 /* features.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = features.h; sourceTree = "<group>"; };
+		5A7C1E09216F2A8500B8EDD7 /* value.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = value.h; sourceTree = "<group>"; };
+		5A7C1E0A216F2A8500B8EDD7 /* autolink.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = autolink.h; sourceTree = "<group>"; };
+		5A7C1E0B216F2A8500B8EDD7 /* json.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = json.h; sourceTree = "<group>"; };
+		5A7C1E0C216F2A8500B8EDD7 /* writer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = writer.h; sourceTree = "<group>"; };
+		5A7C1E0D216F2A8500B8EDD7 /* forwards.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = forwards.h; sourceTree = "<group>"; };
+		5A7C1E10216F2AA300B8EDD7 /* libjson_linux.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libjson_linux.a; sourceTree = "<group>"; };
+		5A7C1E12216F2AC600B8EDD7 /* libcurl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcurl.a; sourceTree = "<group>"; };
+		5A7C1E15216F2AC700B8EDD7 /* libcurl.4.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libcurl.4.dylib; sourceTree = "<group>"; };
+		5A7C1E16216F2AC700B8EDD7 /* libcurl.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libcurl.dylib; sourceTree = "<group>"; };
+		5A7C1E17216F2AC700B8EDD7 /* libcurl.la */ = {isa = PBXFileReference; lastKnownFileType = text; path = libcurl.la; sourceTree = "<group>"; };
+		5A7C1E47217099EB00B8EDD7 /* HumanBodyDetect.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = HumanBodyDetect.hpp; sourceTree = "<group>"; };
+		5A7C1E48217099EC00B8EDD7 /* HumanBodySegment.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = HumanBodySegment.cpp; sourceTree = "<group>"; };
+		5A7C1E49217099ED00B8EDD7 /* HumanBodySegment.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = HumanBodySegment.hpp; sourceTree = "<group>"; };
+		5A7C1E4A217099EE00B8EDD7 /* HumanBodySkeleton.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = HumanBodySkeleton.cpp; sourceTree = "<group>"; };
+		5A7C1E4B217099EE00B8EDD7 /* Guesture.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Guesture.hpp; sourceTree = "<group>"; };
+		5A7C1E4C217099EF00B8EDD7 /* HumanBodySkeleton.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = HumanBodySkeleton.hpp; sourceTree = "<group>"; };
+		5A7C1E4D217099F000B8EDD7 /* Guesture.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Guesture.cpp; sourceTree = "<group>"; };
+		5A7C1E4E217099F200B8EDD7 /* HumanBodyDetect.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = HumanBodyDetect.cpp; sourceTree = "<group>"; };
+		5AB230452160B9C2005DB600 /* FaeBeautify.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FaeBeautify.cpp; sourceTree = "<group>"; };
+		5AB230462160B9C2005DB600 /* FaeBeautify.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FaeBeautify.hpp; sourceTree = "<group>"; };
+		5AB230492160BB6D005DB600 /* FaceAnalyze.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FaceAnalyze.cpp; sourceTree = "<group>"; };
+		5AB2304A2160BB6D005DB600 /* FaceAnalyze.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FaceAnalyze.hpp; sourceTree = "<group>"; };
+		5AB2304D2160BC0A005DB600 /* FaceGetDetail.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FaceGetDetail.cpp; sourceTree = "<group>"; };
+		5AB2304E2160BC0A005DB600 /* FaceGetDetail.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FaceGetDetail.hpp; sourceTree = "<group>"; };
+		5AB230512160BCF3005DB600 /* FaceSetUserId.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FaceSetUserId.cpp; sourceTree = "<group>"; };
+		5AB230522160BCF3005DB600 /* FaceSetUserId.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FaceSetUserId.hpp; sourceTree = "<group>"; };
+		5AB230562160BDAB005DB600 /* FaceSetCreate.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FaceSetCreate.cpp; sourceTree = "<group>"; };
+		5AB230572160BDAB005DB600 /* FaceSetCreate.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FaceSetCreate.hpp; sourceTree = "<group>"; };
+		5AB2305E2160BF11005DB600 /* FaceSetAdd.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FaceSetAdd.cpp; sourceTree = "<group>"; };
+		5AB2305F2160BF11005DB600 /* FaceSetAdd.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FaceSetAdd.hpp; sourceTree = "<group>"; };
+		5AB230622160BFBE005DB600 /* FaceSetRemove.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FaceSetRemove.cpp; sourceTree = "<group>"; };
+		5AB230632160BFBF005DB600 /* FaceSetRemove.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FaceSetRemove.hpp; sourceTree = "<group>"; };
+		5AB230662160C040005DB600 /* FaceSetSearch.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FaceSetSearch.cpp; sourceTree = "<group>"; };
+		5AB230672160C040005DB600 /* FaceSetSearch.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FaceSetSearch.hpp; sourceTree = "<group>"; };
+		5AB2306A2160C0B9005DB600 /* FaceSetDetail.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FaceSetDetail.cpp; sourceTree = "<group>"; };
+		5AB2306B2160C0B9005DB600 /* FaceSetDetail.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FaceSetDetail.hpp; sourceTree = "<group>"; };
+		5AB2306E2160C126005DB600 /* FaceSetUpdate.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FaceSetUpdate.cpp; sourceTree = "<group>"; };
+		5AB2306F2160C126005DB600 /* FaceSetUpdate.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FaceSetUpdate.hpp; sourceTree = "<group>"; };
+		5AB230722160C18B005DB600 /* FaceSetDelete.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FaceSetDelete.cpp; sourceTree = "<group>"; };
+		5AB230732160C18B005DB600 /* FaceSetDelete.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FaceSetDelete.hpp; sourceTree = "<group>"; };
+		5AB230762160C1FF005DB600 /* FaceSetList.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FaceSetList.cpp; sourceTree = "<group>"; };
+		5AB230772160C1FF005DB600 /* FaceSetList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FaceSetList.hpp; sourceTree = "<group>"; };
+		5AB2307A2160C29D005DB600 /* FaceSetAddFaceAsync.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FaceSetAddFaceAsync.cpp; sourceTree = "<group>"; };
+		5AB2307B2160C29D005DB600 /* FaceSetAddFaceAsync.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FaceSetAddFaceAsync.hpp; sourceTree = "<group>"; };
+		5AB2307E2160C32D005DB600 /* FaceSetRemoceFaceAsync.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FaceSetRemoceFaceAsync.cpp; sourceTree = "<group>"; };
+		5AB2307F2160C32D005DB600 /* FaceSetRemoceFaceAsync.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FaceSetRemoceFaceAsync.hpp; sourceTree = "<group>"; };
+		5AB230822160C3AD005DB600 /* FaceSetGetTaskStatus.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FaceSetGetTaskStatus.cpp; sourceTree = "<group>"; };
+		5AB230832160C3AD005DB600 /* FaceSetGetTaskStatus.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FaceSetGetTaskStatus.hpp; sourceTree = "<group>"; };
+		5AB230982160C6D3005DB600 /* OCRIDCard.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = OCRIDCard.cpp; sourceTree = "<group>"; };
+		5AB230992160C6D3005DB600 /* OCRIDCard.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = OCRIDCard.hpp; sourceTree = "<group>"; };
+		5AB2309C2160C752005DB600 /* OCRDriverLicense.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = OCRDriverLicense.cpp; sourceTree = "<group>"; };
+		5AB2309D2160C752005DB600 /* OCRDriverLicense.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = OCRDriverLicense.hpp; sourceTree = "<group>"; };
+		5AB230A02160C7D9005DB600 /* OCRVehicle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = OCRVehicle.cpp; sourceTree = "<group>"; };
+		5AB230A12160C7D9005DB600 /* OCRVehicle.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = OCRVehicle.hpp; sourceTree = "<group>"; };
+		5AB230A42160C84C005DB600 /* OCRBankCard.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = OCRBankCard.cpp; sourceTree = "<group>"; };
+		5AB230A52160C84C005DB600 /* OCRBankCard.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = OCRBankCard.hpp; sourceTree = "<group>"; };
+		5AB230A92160C902005DB600 /* ImageLicenseplate.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ImageLicenseplate.cpp; sourceTree = "<group>"; };
+		5AB230AA2160C902005DB600 /* ImageLicenseplate.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ImageLicenseplate.hpp; sourceTree = "<group>"; };
+		5AB230AD2160C998005DB600 /* MergeFace.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MergeFace.cpp; sourceTree = "<group>"; };
+		5AB230AE2160C998005DB600 /* MergeFace.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MergeFace.hpp; sourceTree = "<group>"; };
+		5AB230B12160CA18005DB600 /* RecognizeText.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RecognizeText.cpp; sourceTree = "<group>"; };
+		5AB230B22160CA18005DB600 /* RecognizeText.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = RecognizeText.hpp; sourceTree = "<group>"; };
+		5AB230B52160CA84005DB600 /* SceneAndObject.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SceneAndObject.cpp; sourceTree = "<group>"; };
+		5AB230B62160CA84005DB600 /* SceneAndObject.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SceneAndObject.hpp; sourceTree = "<group>"; };
+		5AB230BC2160D0A5005DB600 /* CurlPost.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CurlPost.cpp; sourceTree = "<group>"; };
+		5AB230BD2160D0A5005DB600 /* CurlPost.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CurlPost.hpp; sourceTree = "<group>"; };
+		5AFB19B221709D07005F9EF0 /* TestMain */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TestMain; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AFB19B421709D07005F9EF0 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		5AFB19C421709DE1005F9EF0 /* libFaceppApi.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFaceppApi.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,33 +185,230 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5AFB19AF21709D07005F9EF0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AFB19C721709F4E005F9EF0 /* libFaceppApi.a in Frameworks */,
+				5AFB19BB21709D24005F9EF0 /* libjson_linux.a in Frameworks */,
+				5AFB19BA21709D1B005F9EF0 /* libcurl.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		5A01B253215F64E300949331 = {
 			isa = PBXGroup;
 			children = (
+				5A7C1E0E216F2A8F00B8EDD7 /* libs */,
+				5A7C1DFB216F2A6300B8EDD7 /* include */,
 				5A01B25E215F64E300949331 /* FaceppApiLib */,
-				5A01B25D215F64E300949331 /* Products */,
+				5AFB19B321709D07005F9EF0 /* TestMain */,
+				5A01B279215F6A1000949331 /* Frameworks */,
+				5AFB19B221709D07005F9EF0 /* TestMain */,
+				5AFB19C421709DE1005F9EF0 /* libFaceppApi.a */,
 			);
-			sourceTree = "<group>";
-		};
-		5A01B25D215F64E300949331 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				5A01B25C215F64E300949331 /* libFaceppApiLib.a */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		5A01B25E215F64E300949331 /* FaceppApiLib */ = {
 			isa = PBXGroup;
 			children = (
-				5A01B25F215F64E300949331 /* FaceppApiLib.hpp */,
-				5A01B261215F64E300949331 /* FaceppApiLibPriv.hpp */,
-				5A01B263215F64E300949331 /* FaceppApiLib.cpp */,
+				5AB230BB2160D080005DB600 /* Utils */,
+				5AB230A82160C8C8005DB600 /* ImagePP */,
+				5AB230972160C6BD005DB600 /* OCR */,
+				5AB230862160C4B9005DB600 /* HumanBody */,
+				5AB230552160BD8F005DB600 /* FaceSet */,
+				5A0DF8E421607DA600A15585 /* Face */,
+				5A0DF8E021607A4300A15585 /* FaceppApi.cpp */,
+				5A0DF8E121607A4300A15585 /* FaceppApi.hpp */,
 			);
 			path = FaceppApiLib;
+			sourceTree = "<group>";
+		};
+		5A01B279215F6A1000949331 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5A2BB4F0216E029500A56CDA /* libFaceppApi.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5A0DF8E421607DA600A15585 /* Face */ = {
+			isa = PBXGroup;
+			children = (
+				5A01B2BB215F7C8400949331 /* FaceDetect.cpp */,
+				5A01B2BC215F7C8400949331 /* FaceDetect.hpp */,
+				5A0DF8E92160B72200A15585 /* FaceCompare.cpp */,
+				5A0DF8EA2160B72200A15585 /* FaceCompare.hpp */,
+				5AB230452160B9C2005DB600 /* FaeBeautify.cpp */,
+				5AB230462160B9C2005DB600 /* FaeBeautify.hpp */,
+				5AB230492160BB6D005DB600 /* FaceAnalyze.cpp */,
+				5AB2304A2160BB6D005DB600 /* FaceAnalyze.hpp */,
+				5AB2304D2160BC0A005DB600 /* FaceGetDetail.cpp */,
+				5AB2304E2160BC0A005DB600 /* FaceGetDetail.hpp */,
+				5AB230512160BCF3005DB600 /* FaceSetUserId.cpp */,
+				5AB230522160BCF3005DB600 /* FaceSetUserId.hpp */,
+			);
+			path = Face;
+			sourceTree = "<group>";
+		};
+		5A7C1DFB216F2A6300B8EDD7 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				5A7C1E05216F2A8500B8EDD7 /* json */,
+				5A7C1DFC216F2A7800B8EDD7 /* curl */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		5A7C1DFC216F2A7800B8EDD7 /* curl */ = {
+			isa = PBXGroup;
+			children = (
+				5A7C1DFD216F2A7800B8EDD7 /* stdcheaders.h */,
+				5A7C1DFE216F2A7800B8EDD7 /* mprintf.h */,
+				5A7C1DFF216F2A7800B8EDD7 /* easy.h */,
+				5A7C1E00216F2A7800B8EDD7 /* curl.h */,
+				5A7C1E01216F2A7800B8EDD7 /* curlver.h */,
+				5A7C1E02216F2A7800B8EDD7 /* system.h */,
+				5A7C1E03216F2A7800B8EDD7 /* typecheck-gcc.h */,
+				5A7C1E04216F2A7800B8EDD7 /* multi.h */,
+			);
+			path = curl;
+			sourceTree = "<group>";
+		};
+		5A7C1E05216F2A8500B8EDD7 /* json */ = {
+			isa = PBXGroup;
+			children = (
+				5A7C1E06216F2A8500B8EDD7 /* reader.h */,
+				5A7C1E07216F2A8500B8EDD7 /* config.h */,
+				5A7C1E08216F2A8500B8EDD7 /* features.h */,
+				5A7C1E09216F2A8500B8EDD7 /* value.h */,
+				5A7C1E0A216F2A8500B8EDD7 /* autolink.h */,
+				5A7C1E0B216F2A8500B8EDD7 /* json.h */,
+				5A7C1E0C216F2A8500B8EDD7 /* writer.h */,
+				5A7C1E0D216F2A8500B8EDD7 /* forwards.h */,
+			);
+			path = json;
+			sourceTree = "<group>";
+		};
+		5A7C1E0E216F2A8F00B8EDD7 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				5A7C1E11216F2AAE00B8EDD7 /* curl */,
+				5A7C1E0F216F2AA300B8EDD7 /* json */,
+			);
+			path = libs;
+			sourceTree = "<group>";
+		};
+		5A7C1E0F216F2AA300B8EDD7 /* json */ = {
+			isa = PBXGroup;
+			children = (
+				5A7C1E10216F2AA300B8EDD7 /* libjson_linux.a */,
+			);
+			path = json;
+			sourceTree = "<group>";
+		};
+		5A7C1E11216F2AAE00B8EDD7 /* curl */ = {
+			isa = PBXGroup;
+			children = (
+				5A7C1E15216F2AC700B8EDD7 /* libcurl.4.dylib */,
+				5A7C1E12216F2AC600B8EDD7 /* libcurl.a */,
+				5A7C1E16216F2AC700B8EDD7 /* libcurl.dylib */,
+				5A7C1E17216F2AC700B8EDD7 /* libcurl.la */,
+			);
+			path = curl;
+			sourceTree = "<group>";
+		};
+		5AB230552160BD8F005DB600 /* FaceSet */ = {
+			isa = PBXGroup;
+			children = (
+				5AB230562160BDAB005DB600 /* FaceSetCreate.cpp */,
+				5AB230572160BDAB005DB600 /* FaceSetCreate.hpp */,
+				5AB2305E2160BF11005DB600 /* FaceSetAdd.cpp */,
+				5AB2305F2160BF11005DB600 /* FaceSetAdd.hpp */,
+				5AB230622160BFBE005DB600 /* FaceSetRemove.cpp */,
+				5AB230632160BFBF005DB600 /* FaceSetRemove.hpp */,
+				5AB230662160C040005DB600 /* FaceSetSearch.cpp */,
+				5AB230672160C040005DB600 /* FaceSetSearch.hpp */,
+				5AB2306A2160C0B9005DB600 /* FaceSetDetail.cpp */,
+				5AB2306B2160C0B9005DB600 /* FaceSetDetail.hpp */,
+				5AB2306E2160C126005DB600 /* FaceSetUpdate.cpp */,
+				5AB2306F2160C126005DB600 /* FaceSetUpdate.hpp */,
+				5AB230722160C18B005DB600 /* FaceSetDelete.cpp */,
+				5AB230732160C18B005DB600 /* FaceSetDelete.hpp */,
+				5AB230762160C1FF005DB600 /* FaceSetList.cpp */,
+				5AB230772160C1FF005DB600 /* FaceSetList.hpp */,
+				5AB2307A2160C29D005DB600 /* FaceSetAddFaceAsync.cpp */,
+				5AB2307B2160C29D005DB600 /* FaceSetAddFaceAsync.hpp */,
+				5AB2307E2160C32D005DB600 /* FaceSetRemoceFaceAsync.cpp */,
+				5AB2307F2160C32D005DB600 /* FaceSetRemoceFaceAsync.hpp */,
+				5AB230822160C3AD005DB600 /* FaceSetGetTaskStatus.cpp */,
+				5AB230832160C3AD005DB600 /* FaceSetGetTaskStatus.hpp */,
+			);
+			path = FaceSet;
+			sourceTree = "<group>";
+		};
+		5AB230862160C4B9005DB600 /* HumanBody */ = {
+			isa = PBXGroup;
+			children = (
+				5A7C1E4D217099F000B8EDD7 /* Guesture.cpp */,
+				5A7C1E4B217099EE00B8EDD7 /* Guesture.hpp */,
+				5A7C1E4E217099F200B8EDD7 /* HumanBodyDetect.cpp */,
+				5A7C1E47217099EB00B8EDD7 /* HumanBodyDetect.hpp */,
+				5A7C1E48217099EC00B8EDD7 /* HumanBodySegment.cpp */,
+				5A7C1E49217099ED00B8EDD7 /* HumanBodySegment.hpp */,
+				5A7C1E4A217099EE00B8EDD7 /* HumanBodySkeleton.cpp */,
+				5A7C1E4C217099EF00B8EDD7 /* HumanBodySkeleton.hpp */,
+			);
+			path = HumanBody;
+			sourceTree = "<group>";
+		};
+		5AB230972160C6BD005DB600 /* OCR */ = {
+			isa = PBXGroup;
+			children = (
+				5AB230982160C6D3005DB600 /* OCRIDCard.cpp */,
+				5AB230992160C6D3005DB600 /* OCRIDCard.hpp */,
+				5AB2309C2160C752005DB600 /* OCRDriverLicense.cpp */,
+				5AB2309D2160C752005DB600 /* OCRDriverLicense.hpp */,
+				5AB230A02160C7D9005DB600 /* OCRVehicle.cpp */,
+				5AB230A12160C7D9005DB600 /* OCRVehicle.hpp */,
+				5AB230A42160C84C005DB600 /* OCRBankCard.cpp */,
+				5AB230A52160C84C005DB600 /* OCRBankCard.hpp */,
+			);
+			path = OCR;
+			sourceTree = "<group>";
+		};
+		5AB230A82160C8C8005DB600 /* ImagePP */ = {
+			isa = PBXGroup;
+			children = (
+				5AB230A92160C902005DB600 /* ImageLicenseplate.cpp */,
+				5AB230AA2160C902005DB600 /* ImageLicenseplate.hpp */,
+				5AB230AD2160C998005DB600 /* MergeFace.cpp */,
+				5AB230AE2160C998005DB600 /* MergeFace.hpp */,
+				5AB230B12160CA18005DB600 /* RecognizeText.cpp */,
+				5AB230B22160CA18005DB600 /* RecognizeText.hpp */,
+				5AB230B52160CA84005DB600 /* SceneAndObject.cpp */,
+				5AB230B62160CA84005DB600 /* SceneAndObject.hpp */,
+			);
+			path = ImagePP;
+			sourceTree = "<group>";
+		};
+		5AB230BB2160D080005DB600 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				5AB230BC2160D0A5005DB600 /* CurlPost.cpp */,
+				5AB230BD2160D0A5005DB600 /* CurlPost.hpp */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		5AFB19B321709D07005F9EF0 /* TestMain */ = {
+			isa = PBXGroup;
+			children = (
+				5AFB19B421709D07005F9EF0 /* main.cpp */,
+			);
+			path = TestMain;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -63,8 +418,37 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A01B260215F64E300949331 /* FaceppApiLib.hpp in Headers */,
-				5A01B262215F64E300949331 /* FaceppApiLibPriv.hpp in Headers */,
+				5AFB19C021709DE1005F9EF0 /* Guesture.hpp in Headers */,
+				5AFB19C121709DE1005F9EF0 /* HumanBodyDetect.hpp in Headers */,
+				5AFB19C221709DE1005F9EF0 /* HumanBodySegment.hpp in Headers */,
+				5AFB19C321709DE1005F9EF0 /* HumanBodySkeleton.hpp in Headers */,
+				5AB230652160BFBF005DB600 /* FaceSetRemove.hpp in Headers */,
+				5A0DF8E321607A4300A15585 /* FaceppApi.hpp in Headers */,
+				5AB230812160C32D005DB600 /* FaceSetRemoceFaceAsync.hpp in Headers */,
+				5AB2304C2160BB6D005DB600 /* FaceAnalyze.hpp in Headers */,
+				5AB230542160BCF3005DB600 /* FaceSetUserId.hpp in Headers */,
+				5AB2309F2160C752005DB600 /* OCRDriverLicense.hpp in Headers */,
+				5A0DF8EC2160B72200A15585 /* FaceCompare.hpp in Headers */,
+				5AB230752160C18B005DB600 /* FaceSetDelete.hpp in Headers */,
+				5AB230792160C1FF005DB600 /* FaceSetList.hpp in Headers */,
+				5AB230502160BC0A005DB600 /* FaceGetDetail.hpp in Headers */,
+				5AB230A72160C84C005DB600 /* OCRBankCard.hpp in Headers */,
+				5AB230692160C040005DB600 /* FaceSetSearch.hpp in Headers */,
+				5AB230BF2160D0A5005DB600 /* CurlPost.hpp in Headers */,
+				5AB230852160C3AD005DB600 /* FaceSetGetTaskStatus.hpp in Headers */,
+				5AB230612160BF11005DB600 /* FaceSetAdd.hpp in Headers */,
+				5AB230A32160C7D9005DB600 /* OCRVehicle.hpp in Headers */,
+				5AB230712160C126005DB600 /* FaceSetUpdate.hpp in Headers */,
+				5AB230482160B9C2005DB600 /* FaeBeautify.hpp in Headers */,
+				5AB230B42160CA18005DB600 /* RecognizeText.hpp in Headers */,
+				5AB2306D2160C0B9005DB600 /* FaceSetDetail.hpp in Headers */,
+				5AB230592160BDAB005DB600 /* FaceSetCreate.hpp in Headers */,
+				5AB230B02160C998005DB600 /* MergeFace.hpp in Headers */,
+				5AB230B82160CA84005DB600 /* SceneAndObject.hpp in Headers */,
+				5AB2307D2160C29D005DB600 /* FaceSetAddFaceAsync.hpp in Headers */,
+				5AB230AC2160C902005DB600 /* ImageLicenseplate.hpp in Headers */,
+				5A01B2BE215F7C8400949331 /* FaceDetect.hpp in Headers */,
+				5AB2309B2160C6D3005DB600 /* OCRIDCard.hpp in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,8 +469,25 @@
 			);
 			name = FaceppApiLib;
 			productName = FaceppApiLib;
-			productReference = 5A01B25C215F64E300949331 /* libFaceppApiLib.a */;
+			productReference = 5AFB19C421709DE1005F9EF0 /* libFaceppApi.a */;
 			productType = "com.apple.product-type.library.static";
+		};
+		5AFB19B121709D07005F9EF0 /* TestMain */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5AFB19B621709D07005F9EF0 /* Build configuration list for PBXNativeTarget "TestMain" */;
+			buildPhases = (
+				5AFB19AE21709D07005F9EF0 /* Sources */,
+				5AFB19AF21709D07005F9EF0 /* Frameworks */,
+				5AFB19B021709D07005F9EF0 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestMain;
+			productName = TestMain;
+			productReference = 5AFB19B221709D07005F9EF0 /* TestMain */;
+			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
@@ -101,6 +502,10 @@
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
 					};
+					5AFB19B121709D07005F9EF0 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 5A01B257215F64E300949331 /* Build configuration list for PBXProject "FaceppApiLib" */;
@@ -111,11 +516,12 @@
 				en,
 			);
 			mainGroup = 5A01B253215F64E300949331;
-			productRefGroup = 5A01B25D215F64E300949331 /* Products */;
+			productRefGroup = 5A01B253215F64E300949331;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				5A01B25B215F64E300949331 /* FaceppApiLib */,
+				5AFB19B121709D07005F9EF0 /* TestMain */,
 			);
 		};
 /* End PBXProject section */
@@ -125,7 +531,45 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A01B264215F64E300949331 /* FaceppApiLib.cpp in Sources */,
+				5AFB19BC21709DD0005F9EF0 /* Guesture.cpp in Sources */,
+				5AFB19BD21709DD0005F9EF0 /* HumanBodyDetect.cpp in Sources */,
+				5AFB19BE21709DD0005F9EF0 /* HumanBodySegment.cpp in Sources */,
+				5AFB19BF21709DD0005F9EF0 /* HumanBodySkeleton.cpp in Sources */,
+				5AB2306C2160C0B9005DB600 /* FaceSetDetail.cpp in Sources */,
+				5AB230532160BCF3005DB600 /* FaceSetUserId.cpp in Sources */,
+				5AB230BE2160D0A5005DB600 /* CurlPost.cpp in Sources */,
+				5AB230602160BF11005DB600 /* FaceSetAdd.cpp in Sources */,
+				5AB230842160C3AD005DB600 /* FaceSetGetTaskStatus.cpp in Sources */,
+				5AB230AB2160C902005DB600 /* ImageLicenseplate.cpp in Sources */,
+				5AB230582160BDAB005DB600 /* FaceSetCreate.cpp in Sources */,
+				5AB230802160C32D005DB600 /* FaceSetRemoceFaceAsync.cpp in Sources */,
+				5AB2304F2160BC0A005DB600 /* FaceGetDetail.cpp in Sources */,
+				5AB230702160C126005DB600 /* FaceSetUpdate.cpp in Sources */,
+				5AB230782160C1FF005DB600 /* FaceSetList.cpp in Sources */,
+				5AB2309A2160C6D3005DB600 /* OCRIDCard.cpp in Sources */,
+				5AB230A22160C7D9005DB600 /* OCRVehicle.cpp in Sources */,
+				5AB230682160C040005DB600 /* FaceSetSearch.cpp in Sources */,
+				5A01B2BD215F7C8400949331 /* FaceDetect.cpp in Sources */,
+				5AB2309E2160C752005DB600 /* OCRDriverLicense.cpp in Sources */,
+				5AB2307C2160C29D005DB600 /* FaceSetAddFaceAsync.cpp in Sources */,
+				5AB230642160BFBF005DB600 /* FaceSetRemove.cpp in Sources */,
+				5AB2304B2160BB6D005DB600 /* FaceAnalyze.cpp in Sources */,
+				5AB230742160C18B005DB600 /* FaceSetDelete.cpp in Sources */,
+				5AB230A62160C84C005DB600 /* OCRBankCard.cpp in Sources */,
+				5AB230472160B9C2005DB600 /* FaeBeautify.cpp in Sources */,
+				5AB230AF2160C998005DB600 /* MergeFace.cpp in Sources */,
+				5A0DF8EB2160B72200A15585 /* FaceCompare.cpp in Sources */,
+				5A0DF8E221607A4300A15585 /* FaceppApi.cpp in Sources */,
+				5AB230B32160CA18005DB600 /* RecognizeText.cpp in Sources */,
+				5AB230B72160CA84005DB600 /* SceneAndObject.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AFB19AE21709D07005F9EF0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AFB19B521709D07005F9EF0 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,7 +686,15 @@
 				EXECUTABLE_PREFIX = lib;
 				GCC_ENABLE_CPP_EXCEPTIONS = YES;
 				GCC_ENABLE_CPP_RTTI = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FaceppApiLib/curl/lib",
+					"$(PROJECT_DIR)/curl/lib",
+					"$(PROJECT_DIR)/json/lib",
+					"$(PROJECT_DIR)/libs/curl",
+					"$(PROJECT_DIR)/libs/json",
+				);
+				PRODUCT_NAME = FaceppApi;
 			};
 			name = Debug;
 		};
@@ -253,6 +705,42 @@
 				EXECUTABLE_PREFIX = lib;
 				GCC_ENABLE_CPP_EXCEPTIONS = YES;
 				GCC_ENABLE_CPP_RTTI = YES;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FaceppApiLib/curl/lib",
+					"$(PROJECT_DIR)/curl/lib",
+					"$(PROJECT_DIR)/json/lib",
+					"$(PROJECT_DIR)/libs/curl",
+					"$(PROJECT_DIR)/libs/json",
+				);
+				PRODUCT_NAME = FaceppApi;
+			};
+			name = Release;
+		};
+		5AFB19B721709D07005F9EF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug",
+					"$(PROJECT_DIR)/libs/curl",
+					"$(PROJECT_DIR)/libs/json",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5AFB19B821709D07005F9EF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug",
+					"$(PROJECT_DIR)/libs/curl",
+					"$(PROJECT_DIR)/libs/json",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -274,6 +762,15 @@
 			buildConfigurations = (
 				5A01B268215F64E300949331 /* Debug */,
 				5A01B269215F64E300949331 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5AFB19B621709D07005F9EF0 /* Build configuration list for PBXNativeTarget "TestMain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5AFB19B721709D07005F9EF0 /* Debug */,
+				5AFB19B821709D07005F9EF0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
